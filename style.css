@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: rgb(78, 130, 176);
+  --primary-color2: #5899E2;
+  --secondary-color: #335C81;
+  --dark-bg: #1B2845;
+  --light-text: #ecf0f1;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.main {
+  width: 1000px;
+  background-color: var(--dark-bg);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  background-color: var(--primary-color);
+  color: var(--light-text);
+}
+
+.aboutme {
+  height: 600px;
+}
+
+.quicklinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.quicklinks .button {
+  width: 30%;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  background-color: var(--dark-bg);
+}
+
+.projects {
+  display: flex;
+
+}
+
+.projectcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.projectcard {
+  background-color: var(--dark-bg);
+  width: 100%;
+  height: 550px;
+}
+
+.qualifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.qual_entry {
+    background-color: var(--dark-bg);
+    width: 98%;
+    height: 100px;
+
+}
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.collapsible_entry {
+  display: none;
+  overflow: hidden;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
