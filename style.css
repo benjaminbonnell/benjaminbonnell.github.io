@@ -44,10 +44,14 @@ body {
 
   padding: 20px;
   box-sizing: border-box;
+
+
+  display: flex;
+  flex-direction: column;
 }
 
 .aboutme {
-  height: 600px;
+  height: 500px;
   width: 95%;
 
   display: flex;
@@ -98,13 +102,45 @@ body {
 
 .headshot {
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border: 10px solid;
   border-color: var(--background-color)
+}
+
+.project_pic {
+  border-radius: 25%;
+  width: 275px;
+  height: 275px;
+  border: 10px solid;
+  border-color: var(--background-color);
+  margin-right: 10px;
+}
+
+.project_content {
+  display: flex;
+  flex-direction: row;
 }
 
 .aboutme_content {
   text-wrap: wrap; /* Default behavior */
   margin: 30px;
+}
+
+a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
 }
