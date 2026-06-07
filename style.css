@@ -129,13 +129,13 @@ body {
 
 a:link {
   color: pink;
-  background-color: transparent;
+
   text-decoration: none;
 }
 
 a:visited {
   color: pink;
-  background-color: transparent;
+
   text-decoration: none;
 }
 
@@ -153,3 +153,42 @@ a:hover {
   border-color: var(--background-color);
   margin-right: 10px;
 }
+
+ul {
+  margin-left: 16px;
+}
+
+
+
+
+
+.quick-links {
+  height: auto;
+  width: 95%;
+  flex-direction: row;
+  gap: 120px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+
+    align-items: center; 
+
+  justify-content: center; 
+}
+
+.ql-btn {
+  background-color: var(--dark-bg);
+
+  padding: 20px;
+  display: flex;
+  align-items: center; 
+
+  justify-content: center; 
+  align-items: center;
+
+  border-radius: 30px;
+  text-decoration: none; color: var(--light-text);
+  transition: background-color 0.15s;
+}
+
+.ql-btn:hover { background-color: var(--background-color); text-decoration: none;}
+
