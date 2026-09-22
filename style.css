@@ -192,6 +192,31 @@ ul {
 
 .ql-btn:hover { background-color: var(--background-color); text-decoration: none;}
 
+.edu_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.edu_header h1,
+.edu_header h2 {
+  margin-top: 0;
+}
+
+.edu_logo {
+  flex-shrink: 0;
+  width: 90px;
+  height: 90px;
+  margin-top: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 6px solid var(--background-color);
+}
+
 @media (max-width: 768px) {
   .main {
     width: 100%;
@@ -221,6 +246,18 @@ ul {
 
   .quick-links {
     gap: 20px;
+  }
+
+  .edu_header {
+    gap: 14px;
+  }
+
+  .edu_logo {
+    width: 64px;
+    height: 64px;
+    padding: 8px;
+    border-radius: 14px;
+    border-width: 4px;
   }
 
 }
